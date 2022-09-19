@@ -18,13 +18,13 @@ public class ThreadWithRunnable implements Runnable {
             carInstance.parking();
             System.out.println(carInstance.isUsable());
 
-            try{
+            try {
                 Thread.sleep(10);
-            }catch (InterruptedException e){
+            } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-        System.out.println(carInstance.getTotalErrorNum());
+        System.out.println("total Error : " + carInstance.getTotalErrorNum());
     }
 
 }
